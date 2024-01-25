@@ -1,0 +1,14 @@
+<app-header>
+    <nav>
+      <a routerLink="">Back to Home</a>
+    </nav>
+  </app-header>
+  <main *ngIf="olympics$">
+    <h1>{{country.country}}</h1>
+    <div class="stats-container">
+      <app-stats-card title="Number of entries" [value]="country.participations.length"></app-stats-card>
+      <app-stats-card title="Total number of medals" [value]="totalMedals"></app-stats-card>
+      <app-stats-card title="Total number of athletes" [value]="athletes"></app-stats-card>
+    </div>
+    <app-line-chart [participations]="country.participations"></app-line-chart>
+  </main>
