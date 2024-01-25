@@ -92,7 +92,7 @@ export const externalTooltipHandler = (context: { chart: Chart; tooltip: Tooltip
 
         td.appendChild(span);
 
-        const textNode = body.at(0);
+        const textNode = body[0];
         const text = document.createTextNode(textNode? textNode : '');
         td.appendChild(text);
         tr.appendChild(td);
