@@ -1,0 +1,11 @@
+header {
+    background-color: #048B9A;
+    padding-block: 1rem;
+  }
+  
+  img {
+    border-radius: 4px;
+    object-fit: cover;
+    margin-inline: auto;
+    max-height: calc(min(150px, 10vh));
+  }
