@@ -3,6 +3,7 @@ import { Chart } from 'chart.js';
 import { Participation } from 'src/app/core/models/Participation';
 import { externalTooltipHandler } from 'src/app/core/utils/tooltip';
 
+
 @Component({
   selector: 'app-line-chart',
   templateUrl: './line-chart.component.html',
@@ -11,10 +12,12 @@ import { externalTooltipHandler } from 'src/app/core/utils/tooltip';
 export class LineChartComponent implements OnInit{
   @Input({ required: true }) participations!: Participation[];
 
+
   ngOnInit(): void {
     const chartElement = document.getElementById('line-chart');
     const years = this.participations.map(participation => participation.year);
     const medals = this.participations.map(participation => participation.medalsCount);
+
 
     if (chartElement instanceof HTMLCanvasElement) {
       this.renderChart(years, medals, chartElement);
