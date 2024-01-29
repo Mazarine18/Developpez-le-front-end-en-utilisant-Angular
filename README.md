@@ -1,29 +1,70 @@
-# OlympicGamesStarter
+Prérequis
+Visual Studio Code (ou votre éditeur de code préféré ou IDE)
+Git
+NodeJS 
+NPM 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
+Installation et lancement de l'application
 
-Don't forget to install your node_modules before starting (`npm install`).
+Effectuez un fork de ce dépôt
+Cliquez sur le bouton "fork" en haut à droite de la page du dépôt sur GitHub.
 
-## Development server
+Clonez le dépôt forké sur votre machine locale
+Remplacez l'URL ci-dessous par l'URL de votre dépôt forké.
+https://github.com/votre-nom-utilisateur/nom-du-depôt-forké.git
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ouvrez une fenêtre de terminal et accédez au répertoire qui stockera votre projet.
+cd nom-du-depôt-forké
 
-## Build
+Dans votre terminal, exécutez la commande ci-dessous. Le point "." à la fin de la commande clonera le projet dans le répertoire actuel.
+git clone https://github.com/votre-nom-utilisateur/nom-du-depôt-forké.git .
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Installez les dépendances
+Dans votre terminal, exécutez les commandes ci-dessous pour installer les dépendances répertoriées dans le fichier package.json.
+npm install
 
-## Where to start
+Lancez l'application
+Dans votre terminal, exécutez la commande ci-dessous pour lancer le serveur de développement.
 
-As you can see, an architecture has already been defined for the project. It is just a suggestion, you can choose to use your own. The predefined architecture includes (in addition to the default angular architecture) the following:
+ng serve
+L'application se lancera dans votre navigateur à l'adresse http://localhost:4200. Elle se rechargera automatiquement si vous modifiez l'un des fichiers source.
 
-- `components` folder: contains every reusable components
-- `pages` folder: contains components used for routing
-- `core` folder: contains the business logic (`services` and `models` folders)
+Construisez l'application
+Dans votre terminal, exécutez la commande ci-dessous pour construire l'application pour la production.
+ng build
 
-I suggest you to start by understanding this starter code. Pay an extra attention to the `app-routing.module.ts` and the `olympic.service.ts`.
+Les artefacts de construction seront stockés dans le répertoire dist/.
 
-Once mastered, you should continue by creating the typescript interfaces inside the `models` folder. As you can see I already created two files corresponding to the data included inside the `olympic.json`. With your interfaces, improve the code by replacing every `any` by the corresponding interface.
+Gestion des sauvegardes régulières avec GitHub
+Pour assurer la sauvegarde régulière de votre travail sur GitHub, suivez ces étapes :
 
-You're now ready to implement the requested features.
+Ajoutez et validez les modifications
+Dans votre terminal, utilisez les commandes suivantes pour ajouter les fichiers modifiés et valider les changements.
+Les artefacts de construction seront stockés dans le répertoire dist/.
 
-Good luck!
+Gestion des sauvegardes régulières avec GitHub
+Pour assurer la sauvegarde régulière de votre travail sur GitHub, suivez ces étapes :
+
+Ajoutez et validez les modifications
+Dans votre terminal, utilisez les commandes suivantes pour ajouter les fichiers modifiés et valider les changements.
+Les artefacts de construction seront stockés dans le répertoire dist/.
+
+Gestion des sauvegardes régulières avec GitHub
+Pour assurer la sauvegarde régulière de votre travail sur GitHub, suivez ces étapes :
+
+Ajoutez et validez les modifications
+Dans votre terminal, utilisez les commandes suivantes pour ajouter les fichiers modifiés et valider les changements.
+Les artefacts de construction seront stockés dans le répertoire dist/.
+
+Gestion des sauvegardes régulières avec GitHub
+Pour assurer la sauvegarde régulière de votre travail sur GitHub, suivez ces étapes :
+
+Ajoutez et validez les modifications
+
+Dans votre terminal, utilisez les commandes suivantes pour ajouter les fichiers modifiés et valider les changements.
+git add .
+Poussez les modifications sur GitHub
+git commit -m "Description de vos modifications"
+
+Poussez les changements vers votre dépôt forké sur GitHub en utilisant la commande suivante.
+git push origin nom-de-votre-branche
